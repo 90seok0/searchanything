@@ -1,0 +1,16 @@
+@charset 'utf-8';
+/*--- import ---*/
+@import 'reset.css';
+
+/*--- css ---*/
+#header .inner .search .input.first {
+    width: calc(100% - 30px);
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    outline: none; 
+    padding: 0 20px; 
+    float: left; 
+    position: relative;
+
+}

@@ -1,0 +1,91 @@
+@charset 'utf-8';
+
+/*--- import ---*/
+@import 'reset.css';
+
+/*--- css ---*/
+.dic h1:nth-of-type(1) {
+    font: normal 20px/1 'Roboto';
+    color: #202124;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.dic h2 {
+    font: normal 12px/1 'Roboto';
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.dic h2 span {
+    color: #202124;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.dic input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.dic h1:nth-of-type(2) {
+    font: normal 24px/1 'Roboto';
+    color: #000;
+}
+
+.dic h1:nth-of-type(2) span {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    text-align: center;
+    margin-right: 10px;;
+    color: #1558D6;
+    line-height: 32px;
+    font-size: 24px;
+}
+
+.dic h3 {
+    font: normal 14px/1 'Roboto';
+    color: #444;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+.dic p {
+    font: normal 14px/1 'Roboto';
+    color: #444;
+    padding: 5px 20px;
+}
+
+.dic2 div {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.dic2>div::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.dic2>div>h1 {
+    font: normal 24px/1 'Roboto';
+    color: #202124; 
+    float: left;
+}
+
+.dic2>div>.pic {
+    float: right;
+    width: 30vw;
+    height: 64px;
+    border-radius: 10px;
+    background-color: cornsilk;
+    background: url(../img/imja.jpeg) no-repeat center/cover;
+
+}

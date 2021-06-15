@@ -1,0 +1,360 @@
+@charset 'utf-8';
+/*--- import ---*/
+@import 'reset.css';
+
+
+/*--- css ---*/
+/* header */
+#header {
+    width: 100%;
+    padding: 10px 20px 0;
+    border-bottom: 5px solid #efefef;
+}
+
+#header .inner {
+    width: 100%;
+    margin: 20px auto;
+}
+
+#header .inner .header {
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#header .inner  .header .menubar {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+}
+
+#header .inner  .header .menubar span {
+    width: 24px;
+    height: 1px;
+    background-color: #222;
+}
+
+#header .inner  .header .menubar span:nth-of-type(1) {
+    position: absolute;
+    top: calc(50% - 9px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#header .inner  .header .menubar span:nth-of-type(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#header .inner  .header .menubar span:nth-of-type(3) {
+    position: absolute;
+    bottom: calc(50% - 9px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#header .inner  .header .account {
+    float: right;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: brown;
+    font: normal 16px/32px 'Roboto';   
+    text-align: center;
+    color: white;
+}
+
+#header .inner .search {
+    width: 100%;
+}
+
+.search::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#header .inner .search .input {
+    width: 100%;
+    border-radius: 15px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px  5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#header .inner .search .input a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    position: relative;
+}
+
+.on {
+   animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+    
+}
+
+#header .inner .search .input a span:nth-of-type(1) {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: 2px solid #aaa;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+#header .inner .search .input a span:nth-of-type(2) {
+    width: 40%;
+    height: 2px;
+    background-color: #aaa;
+    position: absolute;
+    top: 65%;
+    right: 5px;
+    transform: rotate(45deg) translateY(-50%);
+}
+
+#header .inner .search .input input {
+    width: calc(100% - 30px);
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    outline: none; 
+    padding: 0 20px; 
+    float: left; 
+}
+
+.search input::placeholder {
+    color: #000;
+}
+
+.search input:hover::placeholder {
+    opacity: 0;
+}
+
+#header .inner .menu {
+    width: 100%;
+}
+
+.menu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#header .inner .menu li {
+    width: calc(100% / 6);
+    float: left;
+    font: normal 14px/1 'roboto';
+    color: #777;
+    text-align: center;
+}
+
+/* content */
+#result {
+    width: 100%;
+    background-color: #efefef;
+}
+
+#result .inner {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#result .inner article {
+    width: 100%;
+    padding: 20px;
+    background-color: white ;
+    border-bottom: 1px solid gainsboro;
+    margin: 5px auto;
+}
+
+#result .inner article h1 {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#result .inner article h1 a {
+    font: normal 20px/1.2 'roboto';
+    color: #1558D6; /* #1A73E8 */
+}
+
+#result .inner article a {
+    display: block;
+    width: 100%;
+    font: normal 12px/1 'roboto';
+    color:#1A7318;
+    margin-bottom: 10px;
+}
+
+#result .inner article .preview span {
+    width: 100%;
+    font: normal 14px/1.2 'roboto';
+    color: #777;
+}
+
+#result .inner .with {
+    width: 100%;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    margin: 5px 0;
+}
+
+#result .inner .with h1 {
+    font: normal 20px/1 'roboto';
+    color: #202124;
+    margin-bottom: 20px;
+}
+
+#result .inner .with .withlist {
+    width: 100%;
+    border-top: 1px solid #aaa;
+    padding: 15px 10px;
+}
+
+.withlist::after {
+    content: "";
+    display: block;
+    clear: both; 
+}
+
+#result .inner .with .withlist .icon {
+    float: left;
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+#result .inner .with .withlist .icon span:nth-of-type(1) {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: 2px solid #777;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#result .inner .with .withlist .icon span:nth-of-type(2) {
+    width: 40%;
+    height: 2px;
+    background-color: #777;
+    position: absolute;
+    top: 65%;
+    right: 2px;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+#result .inner .with .withlist h2 {
+    font: normal 14px/24px 'roboto';
+    color: #202124;
+    padding-left: 20px;
+    float: left;
+}
+
+#result .inner .with .withlist h2 a {
+    display: block;
+    width: 100%;
+    font: normal 14px/1 'roboto';
+    color: #202124;
+    margin-bottom: 0;
+}
+
+.btnMore {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+    font: normal 14px/1 'roboto';
+    color: #444;
+    border: 1px solid #bbb;
+}
+
+.close {
+    display: none;
+}
+
+/* footer */
+#footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #efefef;
+}
+
+#footer .inner {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#footer .inner h1 {
+    margin-top: 20px;
+    font: normal 16px/1 'roboto';
+    color: #777;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#footer .inner h2 {
+    font: normal 14px/1 'roboto';
+    color: #777;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#footer .inner h2 span {
+    font-weight: bold;
+    color: #444;
+}
+
+#footer .inner .wrap {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+#footer .inner .wrap ul {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.wrap ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#footer .inner .wrap ul li {
+    width: 33.333%;
+    float: left;
+    font: normal 14px/1 'roboto';
+    color: #777;
+    text-align: center;
+}
